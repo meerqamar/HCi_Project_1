@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <meta property="og:title" content="Sports Training - Contact">
+    <meta property="og:description" content="Reach out to Sports Training via our contact form or email.">
+    <meta property="og:image" content="images/preview.png">
+    <meta property="og:url" content="https://yourwebsite.com/contact.html">
+    <meta property="og:type" content="website">
+
+</head>
+
+<body>
+
+
+    <header>
+        <!-- Dialog -->
+        <dialog id="infoDialog">
+            <h3>Welcome to Sports Training!</h3>
+            <p>Check out our latest teams and events.</p>
+            <button id="closeDialog">Close</button>
+        </dialog>
+
+        <!-- Button to open dialog -->
+        <button id="openDialog">Open Info</button>
+
+
+
+        <h1>Welcome to the world of Sports Training</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form class="data">
+        <div>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" placeholder="Enter your first name">
+        </div>
+
+        <div>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" placeholder="Enter your last name">
+        </div>
+
+        <div>
+            <label for="userUrl">Website:</label>
+            <input type="url" id="userUrl" placeholder="Paste the link here">
+        </div>
+
+        <div>
+            <label for="dob">Select the date:</label>
+            <input type="date" id="dob">
+        </div>
+
+        <div>
+            <label for="favColor">Pick a color:</label>
+            <input type="color" id="favColor">
+        </div>
+
+        <div>
+            <label for="ageRange">Age in range:</label>
+            <input type="range" id="ageRange" min="1" max="100">
+        </div>
+
+        <div>
+            <label for="subscribe">Subscribe:</label>
+            <input type="checkbox" id="subscribe">
+        </div>
+    </form>
+    <br>
+    <button id="sb-btn">Submit</button>
+    <br>
+    <br>
+    <button id="rst-btn">Reset</button>
+
+    <a href="https://www.canva.com/design/DAGzWuBGJvw/TRX0Ag5v_jnDrWJitCJRPA/edit?referrer=brochures-landing-page"></a>
+
+
+    <script>
+        const dialog = document.getElementById('infoDialog');
+        const openBtn = document.getElementById('openDialog');
+        const closeBtn = document.getElementById('closeDialog');
+
+        openBtn.addEventListener('click', () => {
+            dialog.showModal(); // opens modal
+        });
+
+        closeBtn.addEventListener('click', () => {
+            dialog.close(); // closes modal
+        });
+    </script>
+
+</body>
+
+</html>
